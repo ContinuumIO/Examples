@@ -35,7 +35,6 @@ if __name__ == '__main__':
     
     wordCount = []
     for word, count in result_iterator(job.wait(show=True)):
-        print word, count,
         out_abc.write('%s \t %d\n' % (str(word), int(count)) )
         wordCount.append((word,count))
      
